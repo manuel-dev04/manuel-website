@@ -1,0 +1,321 @@
+$small: 576px;
+$medium: 768px;
+$med-large: 928px;
+$large: 991px;
+$extra-large: 1200px;
+
+@font-face {
+  font-family: "segoe";
+  src: url("/img/fonts/Segoe\ UI.ttf");
+}
+
+@font-face {
+  font-family: "segoe-bold";
+  src: url("/img/fonts/Segoe\ UI\ Bold.ttf");
+}
+
+body {
+  font-family: "segoe", sans-serif;
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #c4c4c4;
+    border-radius: 10px;
+  }
+  @media screen and (max-width: $medium) {
+    &::-webkit-scrollbar {
+      display: none !important;
+    }
+  }
+}
+
+ul {
+  list-style-type: square;
+}
+
+button {
+  outline: none !important;
+}
+
+.fa-bars {
+  font-size: 26px;
+}
+
+.download-btn {
+  display: flex;
+  align-items: center;
+  height: 35px;
+}
+
+#about {
+  padding-bottom: 30px;
+  text-align: justify;
+  h3 {
+    font-size: 1.1rem;
+  }
+  .bio {
+    margin-left: -3px;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+  }
+  .network-icon {
+    width: 150px;
+    justify-content: space-between;
+    i {
+      font-size: 2.1rem;
+    }
+    .lc-logo {
+      width: 1.8rem;
+    }
+    @media screen and (max-width: $large) {
+      width: 200px;
+      .lc-logo {
+        width: 2.5rem;
+      }
+    }
+    @media screen and (max-width: $med-large) {
+      width: 160px;
+    }
+  }
+
+  #profile {
+    padding-bottom: 15px;
+    @media screen and (max-width: $med-large) {
+      padding-top: 15px;
+    }
+  }
+  @media screen and (max-width: $large) {
+    .network-icon {
+      i {
+        font-size: 2.8rem;
+      }
+    }
+  }
+}
+
+#experience {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  .separator {
+    margin-right: 50px;
+  }
+  .col-experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .ul-interests {
+    padding-left: 18px;
+    padding-top: 15px;
+    margin-bottom: 0;
+    li {
+      text-align: justify;
+    }
+  }
+  .exp-meta {
+    margin-top: 3px;
+  }
+  .company-logo {
+    img {
+      width: 20px;
+      height: 20px;
+      margin-right: 5px;
+      margin-top: 2px;
+      @media screen and (max-width: $medium) {
+        width: 17px;
+        height: 17px;
+      }
+    }
+    margin-left: 0;
+  }
+  .separator-2nd {
+    height: 35% !important;
+  }
+}
+
+#certifications {
+  padding-top: 50px;
+  padding-bottom: 70px;
+  .ul-interests {
+    padding-left: 18px;
+    padding-top: 15px;
+    margin-bottom: 0;
+    li {
+      text-align: justify;
+      margin-bottom: 15px;
+    }
+  }
+  .article-metadata {
+    margin-top: 10px !important;
+  }
+  .cambridge-container {
+    display: flex;
+  }
+  .cambridge {
+    width: 20px;
+    height: 25px;
+    margin-right: 10px;
+  }
+  .certifications-box {
+    @media screen and (max-width: $large) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+#projects {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  @media screen and (max-width: $medium) {
+    padding-bottom: 0;
+  }
+  .col-card {
+    @media screen and (max-width: $large) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .project-card {
+    width: 23rem;
+    margin-bottom: 3rem !important;
+    @media screen and (max-width: $large) {
+      width: 22rem !important;
+    }
+    @media screen and (max-width: $extra-large) {
+      width: 19rem;
+    }
+    .card-header {
+      height: 220px;
+      padding: 0;
+      img {
+        height: 100%;
+      }
+      @media screen and (max-width: $extra-large) {
+        height: 200px;
+      }
+      @media screen and (max-width: $med-large) {
+        height: 170px;
+      }
+    }
+    .card-body {
+      padding-top: 15px;
+      @media screen and (max-width: $med-large) {
+        padding-top: 5px;
+      }
+      .card-title {
+        font-size: 0.9rem;
+      }
+    }
+    .btns-container {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      .btn-website {
+        display: flex;
+        align-items: center;
+        height: 32px;
+        @media screen and (max-width: $med-large) {
+          height: 28px;
+        }
+      }
+    }
+    .card-text {
+      padding: 0;
+      text-align: justify;
+      @media screen and (min-width: $large) {
+        font-size: 16px;
+      }
+    }
+    a.btn:visited {
+      color: white;
+    }
+    .network-icon {
+      margin: auto;
+      margin-left: 20px;
+      margin-right: 13px;
+    }
+    .fa-github {
+      font-size: 1.8rem;
+      margin-top: 3px;
+    }
+  }
+}
+
+.section-heading {
+  margin-bottom: 40px;
+  @media screen and (max-width: $large) {
+    text-align: center;
+  }
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+}
+.navbar {
+  @media screen and (max-width: $small) {
+    padding: 0.2rem 1.6rem !important;
+  }
+  .navbar-collapse {
+    margin-bottom: 5px;
+  }
+}
+
+.col-12 {
+  @media screen and (max-width: $small) {
+    padding: 0 1.8rem;
+  }
+}
+
+.navbar-brand {
+  margin-right: 50px;
+}
+
+.site-footer {
+  margin-top: 2rem;
+  @media screen and (max-width: $medium) {
+    margin-top: 0px;
+    .powered-by {
+      margin: 0;
+    }
+  }
+}
+
+.CV-btn {
+  margin-right: 20px;
+}
+
+#CVModal {
+  .modal-body {
+    padding-bottom: 0;
+  }
+  .modal-footer {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    justify-content: center;
+  }
+}
+
+.modal-dialog {
+  @media screen and (min-width: $small) {
+    max-width: 580px;
+  }
+}
+
+.mobile-box,
+.col-card {
+  @media screen and (max-width: $large) {
+    max-width: 100%;
+    padding: 0;
+  }
+}

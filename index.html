@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="author" content="Manuel Martins" />
+    <meta name="description" content="Software Developer" />
+
+    <link rel="alternate" hreflang="en-us" href="https://www.manuelcode.com/" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.0/css/all.css"
+      integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css"
+      integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs="
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css"
+      crossorigin="anonymous"
+      title="hl-light"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css"
+      crossorigin="anonymous"
+      title="hl-dark"
+      disabled
+    />
+
+    <link
+      rel="stylesheet"
+      href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono"
+    />
+
+    <link rel="stylesheet" href="/css/bootstrap_min.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+
+    <link rel="icon" type="image/x-icon" href="/img/manuel.jpg" />
+
+    <link rel="canonical" href="https://manuelcode.com/" />
+
+    <meta property="og:site_name" content="Manuel Martins" />
+    <meta property="og:title" content="Manuel Martins" />
+    <meta property="og:description" content="Software Developer" />
+    <meta property="og:image" content="/img/manuel.jpg" />
+    <meta property="og:type" content="portfolio website" />
+    <meta property="og:url" content="https://www.manuelcode.com" />
+    <title>Manuel Martins</title>
+  </head>
+
+  <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="80">
+    <nav
+      class="navbar navbar-light fixed-top navbar-expand-lg py-0"
+      id="navbar-main"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="/">Manuel Martins</a>
+
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbar"
+          aria-controls="navbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span><i class="fas fa-bars"></i></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/#about" data-target="#about">
+                <span>Home</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/#projects" data-target="#projects">
+                <span>Projects</span>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link CV-btn"
+                href=""
+                data-toggle="modal"
+                data-target="#CVModal"
+              >
+                <span>Curriculum Vitae</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-dark-toggle" href="#"
+                ><i class="fas fa-moon" aria-hidden="true"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <span class="js-widget-page d-none"></span>
+
+    <section id="about" class="home-section wg-about">
+      <div class="container">
+        <div
+          class="row"
+          itemprop="author"
+          itemscope
+          itemtype="http://schema.org/Person"
+          itemref="person-email person-telephone person-address"
+        >
+          <div class="col-12 col-lg-4">
+            <div id="profile">
+              <img
+                class="portrait"
+                src="/img/manuel.jpg"
+                itemprop="image"
+                alt="Avatar"
+              />
+
+              <div class="portrait-title">
+                <h2 itemprop="name">Manuel Martins</h2>
+                <h3 itemprop="jobTitle">Computer Science Student</h3>
+              </div>
+
+              <link itemprop="url" href="" />
+
+              <ul class="network-icon" aria-hidden="true">
+                <li>
+                  <a
+                    itemprop="sameAs"
+                    href="https://github.com/manuel-dev04"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="fab fa-github big-icon"></i>
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    itemprop="sameAs"
+                    href="https://www.linkedin.com/in/manuel-dev/"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="fab fa-linkedin big-icon"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-lg-8" itemprop="description">
+            <h1 class="bio">Biography</h1>
+
+            <p>
+              My name is Manuel Martins, I'm a Computer Science and Engineering
+              Student at Instituto Superior Técnico (IST). I'm extremely
+              passionate about technology in general and how it allows us to
+              improve people's lives and change the world in a positive way.
+            </p>
+
+            <div class="row">
+              <div class="col-md-5">
+                <h3>Interests</h3>
+                <ul class="ul-interests">
+                  <li>Full Stack Development</li>
+                  <li>Software Engineering</li>
+                  <li>Artificial Intelligence</li>
+                </ul>
+              </div>
+
+              <div class="col-md-7">
+                <h3>Education</h3>
+                <ul class="ul-edu fa-ul">
+                  <li>
+                    <i class="fa-li fas fa-graduation-cap"></i>
+                    <div class="description">
+                      <p class="course">
+                        Bachelor's Degree in Computer Science and Engineering,
+                        2022-2025
+                      </p>
+                      <p class="institution"><b>Grade: 17/20</b></p>
+                      <p></p>
+                      <p class="institution">
+                        Instituto Superior Técnico, Lisbon, Portugal
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal CV-->
+    <div
+      class="modal fade"
+      id="CVModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="CVModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <img src="img/CV.svg" />
+          </div>
+          <div class="modal-footer text-center">
+            <button
+              type="submit"
+              onclick="window.open('/img/CV-Manuel-Martins.pdf')"
+              class="btn btn-primary download-btn"
+            >
+              Download
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="projects" class="home-section wg-pages">
+      <div class="container">
+        <div class="col">
+          <div class="col section-heading">
+            <h1>Projects</h1>
+          </div>
+          <div class="col">
+            <div class="row">
+              <div class="col col-card">
+                <div class="card project-card">
+                  <div class="card-header">
+                    <img
+                      class="card-img-top"
+                      src="/img/minesweeper.jpeg"
+                      alt="minesweeper"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col">
+                        <h5 class="card-title">Minesweeper Game</h5>
+                      </div>
+                      <div class="btns-container">
+                        <ul class="network-icon" aria-hidden="true">
+                          <li>
+                            <a
+                              itemprop="sameAs"
+                              href="https://github.com/manuel-dev04/Minesweeper"
+                              target="_blank"
+                              rel="noopener"
+                            >
+                              <i class="fab fa-github big-icon"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <p class="card-text">
+                      Minesweeper game built in Python using best practice
+                      object-oriented programming principles, resulting in a
+                      user-friendly and efficient gameplay experience.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col col-card">
+                <div class="card project-card">
+                  <div class="card-header">
+                    <img
+                      class="card-img-top"
+                      src="/img/library.jpeg"
+                      alt="Library"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col">
+                        <h5 class="card-title">Python Mini-Library</h5>
+                      </div>
+                      <div class="btns-container">
+                        <ul class="network-icon" aria-hidden="true">
+                          <li>
+                            <a
+                              itemprop="sameAs"
+                              href="https://github.com/manuel-dev04/Python-Mini-Library"
+                              target="_blank"
+                              rel="noopener"
+                            >
+                              <i class="fab fa-github big-icon"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <p class="card-text">
+                      Developed a mini Python library consisting of several
+                      methods to simplify operations, resulting in a reusable
+                      components for future projects.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col col-card">
+                <div class="card project-card">
+                  <div class="card-header">
+                    <img
+                      class="card-img-top"
+                      src="/img/schedule.jpg"
+                      alt="schedule-searcher"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col">
+                        <h5 class="card-title">Schedule Searcher</h5>
+                      </div>
+                      <div class="btns-container">
+                        <ul class="network-icon" aria-hidden="true">
+                          <li>
+                            <a
+                              itemprop="sameAs"
+                              href="https://github.com/manuel-dev04/Schedule-Searcher"
+                              target="_blank"
+                              rel="noopener"
+                            >
+                              <i class="fab fa-github big-icon"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <p class="card-text">
+                      Utilized Prolog to create a scheduling system for
+                      university classrooms resulting in an efficient and
+                      optimized allocation of classroom resources
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="/js/jquery-min.js"></script>
+    <script src="/js/main.js"></script>
+
+    <script src="/js/isotope.pkgd.min.js"></script>
+
+    <script src="/js/bootstrap.min.js"></script>
+
+    <div class="container">
+      <footer class="site-footer">
+        <p class="powered-by">
+          &copy; 2023 &middot; Manuel Martins. All rights reserved.
+          <span class="float-right" aria-hidden="true">
+            <a
+              style="cursor: pointer"
+              onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+            >
+              <span class="button_icon">
+                <i class="fas fa-chevron-up fa-2x"></i>
+              </span>
+            </a>
+          </span>
+        </p>
+      </footer>
+    </div>
+
+    <div id="modal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Cite</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <pre><code class="tex hljs"></code></pre>
+          </div>
+          <div class="modal-footer">
+            <a
+              class="btn btn-outline-primary my-1 js-copy-cite"
+              href="#"
+              target="_blank"
+            >
+              <i class="fas fa-copy"></i> Copy
+            </a>
+            <a
+              class="btn btn-outline-primary my-1 js-download-cite"
+              href="#"
+              target="_blank"
+            >
+              <i class="fas fa-download"></i> Download
+            </a>
+            <div id="modal-error"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,436 @@
+@font-face {
+  font-family: "segoe";
+  src: url("/img/fonts/Segoe UI.ttf");
+}
+
+@font-face {
+  font-family: "segoe-bold";
+  src: url("/img/fonts/Segoe UI Bold.ttf");
+}
+
+body {
+  font-family: "segoe", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #c4c4c4;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  body::-webkit-scrollbar {
+    display: none !important;
+  }
+}
+
+ul {
+  list-style-type: square;
+}
+
+button {
+  outline: none !important;
+}
+
+.fa-bars {
+  font-size: 26px;
+}
+
+.download-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 35px;
+}
+
+#about {
+  padding-bottom: 30px;
+  text-align: justify;
+}
+
+#about h3 {
+  font-size: 1.1rem;
+}
+
+#about .bio {
+  margin-left: -3px;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+
+#about .network-icon {
+  width: 100px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+#about .network-icon i {
+  font-size: 2.1rem;
+}
+
+#about .network-icon .lc-logo {
+  width: 1.8rem;
+}
+
+@media screen and (max-width: 991px) {
+  #about .network-icon {
+    width: 120px;
+  }
+  #about .network-icon .lc-logo {
+    width: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 928px) {
+  #about .network-icon {
+    width: 100px;
+  }
+}
+
+#about #profile {
+  padding-bottom: 15px;
+}
+
+@media screen and (max-width: 928px) {
+  #about #profile {
+    padding-top: 15px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #about .network-icon i {
+    font-size: 2.8rem;
+  }
+}
+
+#experience {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#experience .separator {
+  margin-right: 50px;
+}
+
+#experience .col-experience {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#experience .ul-interests {
+  padding-left: 18px;
+  padding-top: 15px;
+  margin-bottom: 0;
+}
+
+#experience .ul-interests li {
+  text-align: justify;
+}
+
+#experience .exp-meta {
+  margin-top: 3px;
+}
+
+#experience .company-logo {
+  margin-left: 0;
+}
+
+#experience .company-logo img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  margin-top: 2px;
+}
+
+@media screen and (max-width: 768px) {
+  #experience .company-logo img {
+    width: 17px;
+    height: 17px;
+  }
+}
+
+#experience .separator-2nd {
+  height: 35% !important;
+}
+
+#certifications {
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+
+#certifications .ul-interests {
+  padding-left: 18px;
+  padding-top: 15px;
+  margin-bottom: 0;
+}
+
+#certifications .ul-interests li {
+  text-align: justify;
+  margin-bottom: 15px;
+}
+
+#certifications .article-metadata {
+  margin-top: 10px !important;
+}
+
+#certifications .cambridge-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#certifications .cambridge {
+  width: 20px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 991px) {
+  #certifications .certifications-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
+#projects {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  #projects {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #projects .col-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+#projects .project-card {
+  width: 23rem;
+  margin-bottom: 3rem !important;
+}
+
+@media screen and (max-width: 991px) {
+  #projects .project-card {
+    width: 22rem !important;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #projects .project-card {
+    width: 19rem;
+  }
+}
+
+#projects .project-card .card-header {
+  height: 220px;
+  padding: 0;
+}
+
+#projects .project-card .card-header img {
+  height: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  #projects .project-card .card-header {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 928px) {
+  #projects .project-card .card-header {
+    height: 170px;
+  }
+}
+
+#projects .project-card .card-body {
+  padding-top: 15px;
+}
+
+@media screen and (max-width: 928px) {
+  #projects .project-card .card-body {
+    padding-top: 5px;
+  }
+}
+
+#projects .project-card .card-body .card-title {
+  font-size: 0.9rem;
+}
+
+#projects .project-card .btns-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: end;
+}
+
+#projects .project-card .btns-container .btn-website {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 32px;
+}
+
+@media screen and (max-width: 928px) {
+  #projects .project-card .btns-container .btn-website {
+    height: 28px;
+  }
+}
+
+#projects .project-card .card-text {
+  padding: 0;
+  text-align: justify;
+}
+
+@media screen and (min-width: 991px) {
+  #projects .project-card .card-text {
+    font-size: 16px;
+  }
+}
+
+#projects .project-card a.btn:visited {
+  color: white;
+}
+
+#projects .project-card .network-icon {
+  margin: auto;
+  margin-left: 20px;
+  margin-right: 13px;
+}
+
+#projects .project-card .fa-github {
+  font-size: 1.8rem;
+  margin-top: 3px;
+}
+
+.section-heading {
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 991px) {
+  .section-heading {
+    text-align: center;
+  }
+}
+
+.section-heading h1 {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 576px) {
+  .navbar {
+    padding: 0.2rem 1.6rem !important;
+  }
+}
+
+.navbar .navbar-collapse {
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 576px) {
+  .col-12 {
+    padding: 0 1.8rem;
+  }
+}
+
+.navbar-brand {
+  margin-right: 50px;
+}
+
+.site-footer {
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .site-footer {
+    margin-top: 0px;
+  }
+  .site-footer .powered-by {
+    margin: 0;
+  }
+}
+
+.CV-btn {
+  margin-right: 20px;
+}
+
+#CVModal .modal-body {
+  padding-bottom: 0;
+}
+
+#CVModal .modal-footer {
+  padding-top: 10px;
+  padding-bottom: 30px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 576px) {
+  .modal-dialog {
+    max-width: 580px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .mobile-box,
+  .col-card {
+    max-width: 100%;
+    padding: 0;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
