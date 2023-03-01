@@ -1,2 +1,2 @@
 # manuel-website
-Personal website with my CV
+Personal website with some of my projects and my CV
